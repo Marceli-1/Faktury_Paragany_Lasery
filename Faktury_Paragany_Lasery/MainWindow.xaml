@@ -27,6 +27,20 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Produkty">
+                <Grid Background="Blue" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="302*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.ColumnSpan="1">
+                        <Button Height="30" Width="100" Margin="10" Click="Button6_Click">Dodaj</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button7_Click">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button8_Click">Utwórz listę</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button9_Click">Informacje</Button>
+                    </StackPanel>
+                    <ListBox Grid.ColumnSpan="2" Name="Lista_produktów" Margin="150,10,10,10">
+                    </ListBox>
+                </Grid>
 
             </TabItem>
             <TabItem Header="Zakup">

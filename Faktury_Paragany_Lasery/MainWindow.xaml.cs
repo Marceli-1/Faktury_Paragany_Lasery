@@ -51,5 +51,10 @@ namespace Faktury_Paragany_Lasery
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
