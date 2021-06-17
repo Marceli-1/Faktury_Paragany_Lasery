@@ -8,5 +8,20 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TextBlock>It is pretty program for store or sth</TextBlock>
-    </Grid>
+    
+    <TabControl>
+        <TabItem Header="Firmy">
+            
+        </TabItem>
+        <TabItem Header="Produkty">
+
+        </TabItem>
+        <TabItem Header="Zakup">
+
+        </TabItem>
+        <TabItem Header="Historia zakupów">
+
+        </TabItem>
+    </TabControl>
+</Grid>
 </Window>
