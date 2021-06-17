@@ -16,11 +16,11 @@
                         <ColumnDefinition Width="302*" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.ColumnSpan="1">
-                        <Button Height="30" Width="100" Margin="10" Click="Button1_Click">Dodaj</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button2_Click">Usuń</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button3_Click">Wystaw Fakturę</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button4_Click">Historia</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button5_Click">Informacje</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_2">Dodaj</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_3">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_4">Wystaw Fakturę</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_6">Informacje</Button>
                     </StackPanel>
                     <ListBox Grid.ColumnSpan="2" Name="Lista_firm" Margin="150,10,10,10">
                     </ListBox>
@@ -33,10 +33,10 @@
                         <ColumnDefinition Width="302*" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.ColumnSpan="1">
-                        <Button Height="30" Width="100" Margin="10" Click="Button6_Click">Dodaj</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button7_Click">Usuń</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button8_Click">Utwórz listę</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button9_Click">Informacje</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_7">Dodaj</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_8">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_9">Utwórz listę</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_10">Informacje</Button>
                     </StackPanel>
                     <ListBox Grid.ColumnSpan="2" Name="Lista_produktów" Margin="150,10,10,10">
                     </ListBox>
@@ -44,6 +44,23 @@
 
             </TabItem>
             <TabItem Header="Zakup">
+                <Grid Background="Red" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="302*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Text="Lista Firm:" Margin="10"/>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="1" Text="Lista Zakupów: " Margin="10"/>
+                    <ListBox Grid.ColumnSpan="2" Grid.Row="0" Name="Lista_firm2" Margin="150,10,10,10"/>
+                    <ListBox Grid.ColumnSpan="2" Grid.Row="1" Name="Lista_zakupów" Margin="150,10,10,10"/>
+                    <Button Grid.ColumnSpan="2" Grid.Row="2" Height="30" Width="100" Margin="10" Click="Button_Click_1">Zatwierdź</Button>
+
+                </Grid>
 
             </TabItem>
             <TabItem Header="Historia zakupów">

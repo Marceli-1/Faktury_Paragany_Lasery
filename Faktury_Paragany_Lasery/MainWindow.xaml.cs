@@ -26,33 +26,57 @@ namespace Faktury_Paragany_Lasery
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Button2_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Button3_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Button4_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void Button5_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Lista_firm_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
         {
 
         }
