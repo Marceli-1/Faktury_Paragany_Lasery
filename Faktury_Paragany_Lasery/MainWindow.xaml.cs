@@ -21,13 +21,8 @@ namespace Faktury_Paragany_Lasery
     /// </summary>
     public partial class MainWindow : Window
     {
-        ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
         public MainWindow()
         {
-            
-            fonts.Add(new FontFamily("Arial"));
-            fonts.Add(new FontFamily("Courier New"));
-            fonts.Add(new FontFamily("Times New Roman"));
             InitializeComponent();
         }
 

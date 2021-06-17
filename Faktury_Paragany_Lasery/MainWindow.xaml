@@ -22,9 +22,8 @@
                         <Button Height="30" Width="100" Margin="10" Click="Button4_Click">Historia</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button5_Click">Informacje</Button>
                     </StackPanel>
-                    <StackPanel Grid.ColumnSpan="2">
-                        <ComboBox Name="Lista_firm" ItemsSource="{Binding fonts}" DisplayMemberPath="Source" Text="My Cities" IsEditable="true" IsReadOnly="true" SelectionChanged="Lista_firm_SelectionChanged"/>
-                    </StackPanel>
+                    <ListBox Grid.ColumnSpan="2" Name="Lista_firm" Margin="150,10,10,10">
+                    </ListBox>
                 </Grid>
             </TabItem>
             <TabItem Header="Produkty">
