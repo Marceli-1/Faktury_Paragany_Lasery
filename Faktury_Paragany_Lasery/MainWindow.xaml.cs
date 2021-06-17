@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,40 @@ namespace Faktury_Paragany_Lasery
     /// </summary>
     public partial class MainWindow : Window
     {
+        ObservableCollection<FontFamily> fonts = new ObservableCollection<FontFamily>();
         public MainWindow()
         {
+            
+            fonts.Add(new FontFamily("Arial"));
+            fonts.Add(new FontFamily("Courier New"));
+            fonts.Add(new FontFamily("Times New Roman"));
             InitializeComponent();
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Lista_firm_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
