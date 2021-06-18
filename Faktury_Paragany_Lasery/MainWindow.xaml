@@ -1,11 +1,15 @@
-﻿<Window x:Class="Faktury_Paragany_Lasery.Views.MainWindow"
+﻿<Window x:Class="Faktury_Paragany_Lasery.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Faktury_Paragany_Lasery.Views"
+        xmlns:local="clr-namespace:Faktury_Paragany_Lasery"
+        xmlns:vm="clr-namespace:Faktury_Paragany_Lasery.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+  <Window.DataContext>
+    <vm:CompanyViewModel/>
+  </Window.DataContext>
     <Grid>
 
         <TabControl>
@@ -22,8 +26,7 @@
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_6">Informacje</Button>
                     </StackPanel>
-                    <ListBox Grid.ColumnSpan="2" Name="Lista_firm" Margin="150,10,10,10">
-                    </ListBox>
+                    <DataGrid Grid.ColumnSpan="2" ItemsSource="{Binding CurrentCompanies}" Margin="150,10,10,10"></DataGrid>
                 </Grid>
             </TabItem>
             <TabItem Header="Produkty">

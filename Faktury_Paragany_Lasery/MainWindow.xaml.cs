@@ -14,11 +14,12 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Faktury_Paragany_Lasery.Views
+namespace Faktury_Paragany_Lasery
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    using ViewModel;
     public partial class MainWindow : Window
     {
         public MainWindow()
