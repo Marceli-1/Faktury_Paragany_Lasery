@@ -26,7 +26,7 @@
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_6">Informacje</Button>
                     </StackPanel>
-                    <DataGrid Grid.ColumnSpan="2" ItemsSource="{Binding CurrentCompanies}" Margin="150,10,10,10"></DataGrid>
+                    <DataGrid Grid.ColumnSpan="2" ItemsSource="{Binding Companies}" Margin="150,10,10,10"></DataGrid>
                 </Grid>
             </TabItem>
             <TabItem Header="Produkty">

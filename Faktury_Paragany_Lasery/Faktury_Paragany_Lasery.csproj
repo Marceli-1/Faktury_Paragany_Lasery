@@ -102,6 +102,7 @@
     <Compile Include="DAL\Entities\Company.cs" />
     <Compile Include="DAL\Repositories\RepositoryCompanies.cs" />
     <Compile Include="Models\Company.cs" />
+    <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\Commands\RelayCommand.cs" />
     <Compile Include="ViewModel\CompanyViewModel.cs" />
     <Page Include="MainWindow.xaml">

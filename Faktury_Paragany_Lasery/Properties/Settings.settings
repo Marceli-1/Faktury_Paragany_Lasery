@@ -1,7 +1,21 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Faktury_Paragany_Lasery.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="username" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">poig_user</Value>
+    </Setting>
+    <Setting Name="password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">password123</Value>
+    </Setting>
+    <Setting Name="db" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">poig</Value>
+    </Setting>
+    <Setting Name="host" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">172.17.0.2</Value>
+    </Setting>
+    <Setting Name="port" Type="System.UInt32" Scope="Application">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

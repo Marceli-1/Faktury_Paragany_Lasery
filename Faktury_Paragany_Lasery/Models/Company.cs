@@ -1,26 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Faktury_Paragany_Lasery.Models
 {
-    public class Company
+    using DAL.Entities;
+    using DAL.Repositories;
+    using System.Collections.ObjectModel;
+    class CompanyModel
     {
-        public string name { get; set; }
-        public int nip { get; set; }
-        public string address { get; set; }
 
-        public Company(string name, int nip, string address)
+        public ObservableCollection<Company> Companies { get; set; } = new ObservableCollection<Company>();
+
+        public CompanyModel()
         {
-            this.name = name;
-            this.nip = nip;
-            this.address = address;
+            var companies = RepositoryCompanies.GetAllCompanies();
+            foreach (var c in companies)
+                Companies.Add(c);
         }
 
-        public Company()
+        private Company FindById(sbyte id)
         {
+            foreach (var c in Companies)
+                if (c.Id == id) return c;
+            return null;
         }
     }
 }
