@@ -98,6 +98,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DAL\DBConnection.cs" />
+    <Compile Include="DAL\Entities\Company.cs" />
+    <Compile Include="DAL\Repositories\RepositoryCompanies.cs" />
     <Compile Include="Models\Company.cs" />
     <Compile Include="ViewModel\Commands\RelayCommand.cs" />
     <Compile Include="ViewModel\CompanyViewModel.cs" />
