@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Faktury_Paragany_Lasery
+namespace Faktury_Paragany_Lasery.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

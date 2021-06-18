@@ -7,18 +7,27 @@ using System.Threading.Tasks;
 
 namespace Faktury_Paragany_Lasery.ViewModel.Commands
 {
-    class RelayCommand : ICommand
-    {
-        public event EventHandler CanExecuteChanged;
-
-        public bool CanExecute(object parameter)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Execute(object parameter)
-        {
-            throw new NotImplementedException();
+    public class RelayCommand : ICommand  
+    {  
+        public event EventHandler CanExecuteChanged;  
+        private readonly Func<object, bool> canExecute;  
+        private readonly Action<object> execute;  
+  
+  
+        public RelayCommand(Func<object, bool> canExecute, Action<object> execute)  
+        {  
+            this.canExecute = canExecute;  
+            this.execute = execute;  
+        }  
+  
+        public bool CanExecute(object parameter)  
+        {  
+            return canExecute(parameter);  
+        }  
+  
+        public void Execute(object parameter)  
+        {  
+            execute(parameter);  
         }
     }
 }
