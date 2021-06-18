@@ -7,6 +7,83 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock>It is pretty program for store or sth</TextBlock>
+
+        <TabControl>
+            <TabItem Header="Firmy">
+                <Grid Background="Green" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="302*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.ColumnSpan="1">
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_2">Dodaj</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_3">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_4">Wystaw Fakturę</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_6">Informacje</Button>
+                    </StackPanel>
+                    <ListBox Grid.ColumnSpan="2" Name="Lista_firm" Margin="150,10,10,10">
+                    </ListBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Produkty">
+                <Grid Background="Blue" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="302*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.ColumnSpan="1">
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_7">Dodaj</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_8">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_9">Utwórz listę</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_10">Informacje</Button>
+                    </StackPanel>
+                    <ListBox Grid.ColumnSpan="2" Name="Lista_produktów" Margin="150,10,10,10">
+                    </ListBox>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Zakup">
+                <Grid Background="Red" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="302*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Text="Lista Firm:" Margin="10"/>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="1" Text="Lista Zakupów: " Margin="10"/>
+                    <ListBox Grid.ColumnSpan="2" Grid.Row="0" Name="Lista_firm2" Margin="150,10,10,10"/>
+                    <ListBox Grid.ColumnSpan="2" Grid.Row="1" Name="Lista_zakupów" Margin="150,10,10,10"/>
+                    <Button Grid.ColumnSpan="2" Grid.Row="2" Height="30" Width="100" Margin="10" Click="Button_Click_1">Zatwierdź</Button>
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Historia zakupów">
+                <Grid Background="Yellow" Margin="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="0" Text="Lista Firm:" Margin="10"/>
+                    <TextBlock Grid.ColumnSpan="1" Grid.Row="1" Text="Lista Zakupów: " Margin="10"/>
+                    <ListBox Grid.ColumnSpan="2" Grid.Row="0" Name="Lista_firm3" Margin="100,10,100,10"/>
+                    <ListBox Grid.ColumnSpan="2" Grid.Row="1" Name="Lista_zakupów2" Margin="100,10,100,10"/>
+                    <TextBox Grid.Row="0" Grid.ColumnSpan="3" Text="Wyniki : " Width="80" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" />
+                    <ListBox Grid.Row="0" Grid.ColumnSpan="2" Name="Wyniki" Margin="250,45,10,10" Grid.Column="1" Grid.RowSpan="2"/>
+
+                </Grid>
+
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
