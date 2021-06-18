@@ -9,6 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
   <Window.DataContext>
     <vm:CompanyViewModel/>
+    <!--  <vm:ProductsViewModel/> to dobrze rozdzielic/zaimplementowac  -->
   </Window.DataContext>
     <Grid>
 
@@ -29,7 +30,7 @@
                     <DataGrid Grid.ColumnSpan="2" ItemsSource="{Binding CurrentCompanies}" Margin="150,10,10,10"></DataGrid>
                 </Grid>
             </TabItem>
-            <TabItem Header="Produkty">
+            <TabItem Header="Produkty" HorizontalAlignment="Left" Width="64">
                 <Grid Background="Blue" Margin="5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="59*"/>
@@ -41,8 +42,7 @@
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_9">Utwórz listę</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_10">Informacje</Button>
                     </StackPanel>
-                    <ListBox Grid.ColumnSpan="2" Name="Lista_produktów" Margin="150,10,10,10">
-                    </ListBox>
+                  <DataGrid Grid.ColumnSpan="2" ItemsSource="{Binding CurrentProducts}" Margin="150,10,10,10"></DataGrid>
                 </Grid>
 
             </TabItem>
