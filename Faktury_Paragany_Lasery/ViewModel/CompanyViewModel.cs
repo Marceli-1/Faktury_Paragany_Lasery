@@ -73,6 +73,7 @@ namespace Faktury_Paragany_Lasery.ViewModel
                 return loadCompanies;
             }
         }
+
         #endregion
     }
 }

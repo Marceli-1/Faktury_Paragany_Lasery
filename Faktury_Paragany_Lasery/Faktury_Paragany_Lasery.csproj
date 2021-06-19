@@ -100,6 +100,7 @@
     </ApplicationDefinition>
     <Compile Include="DAL\DBConnection.cs" />
     <Compile Include="DAL\Entities\Company.cs" />
+    <Compile Include="DAL\Repositories\RepositoryBackBone.cs" />
     <Compile Include="DAL\Repositories\RepositoryCompanies.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Models\Company.cs" />

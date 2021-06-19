@@ -27,7 +27,46 @@
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_6">Informacje</Button>
                     </StackPanel>
-                    <DataGrid Grid.ColumnSpan="2" ItemsSource="{Binding Companies}" Margin="150,10,10,10"></DataGrid>
+                    <ListView Grid.ColumnSpan="2" ItemsSource="{Binding Companies}" Margin="150,10,10,10">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Width="300">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Name}" FontSize="14"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                    <GridViewColumn.Header>
+                                        <TextBlock Text="Company Name"></TextBlock>
+                                    </GridViewColumn.Header>
+                                </GridViewColumn>
+
+                                <GridViewColumn>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Nip}"></TextBlock>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                    <GridViewColumn.Header>
+                                        <TextBlock Text="NIP"></TextBlock>
+                                    </GridViewColumn.Header>
+                                </GridViewColumn>
+                                
+                                <GridViewColumn>
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Address}" FontSize="14"/>
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                    <GridViewColumn.Header>
+                                        <TextBlock Text="Address"></TextBlock>
+                                    </GridViewColumn.Header>
+                                </GridViewColumn>
+                                
+                            </GridView>
+                        </ListView.View>
+                        
+                    </ListView>
                 </Grid>
             </TabItem>
             <TabItem Header="Produkty" HorizontalAlignment="Left" Width="64">
