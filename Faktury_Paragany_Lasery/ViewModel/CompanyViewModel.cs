@@ -17,14 +17,15 @@ namespace Faktury_Paragany_Lasery.ViewModel
     class CompanyViewModel : BaseViewModel 
     {
         #region private attributes
-        private CompanyModel model = new CompanyModel();
+        private CompanyModel model = null;
         private ObservableCollection<Company> companies = null;
         private int idClickedCompany = -1;
         #endregion
 
         #region Constructors
-        public CompanyViewModel()
+        public CompanyViewModel(CompanyModel model)
         {
+            this.model = model;
             companies = model.Companies;
         }
         #endregion
@@ -71,6 +72,26 @@ namespace Faktury_Paragany_Lasery.ViewModel
                         arg => true
                         );
                 return loadCompanies;
+            }
+        }
+
+        private ICommand deleteCompany = null;
+        public ICommand DeleteCompany
+        { 
+            get 
+            {
+                if (deleteCompany == null)
+                {
+                    deleteCompany = new RelayCommand(
+                        arg =>
+                        {
+                            if (model.DeleteCompany(CurrentCompany))
+                                System.Windows.MessageBox.Show("Company deleted");
+                        },
+                        arg => true
+                        );
+                }
+                return deleteCompany;
             }
         }
 

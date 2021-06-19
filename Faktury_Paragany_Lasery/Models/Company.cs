@@ -22,7 +22,9 @@ namespace Faktury_Paragany_Lasery.Models
                 Companies.Add(c);
         }
 
-        private Company FindById(string nip)
+        public bool DeleteCompany(Company company) => RepositoryCompanies.DeleteCompanyFromDB(company);
+
+        private Company FindByNIP(string nip)
         {
             foreach (var c in Companies)
                 if (c.Nip == nip) return c;
