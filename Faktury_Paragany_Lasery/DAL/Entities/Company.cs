@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace Faktury_Paragany_Lasery.DAL.Entities
 
         [StringLength(100)]
         public string Nip { get; set; }
+        public ObservableCollection<Company> Company { get; internal set; }
         #endregion
 
         #region Constructors
