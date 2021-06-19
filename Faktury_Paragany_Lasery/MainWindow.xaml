@@ -69,7 +69,10 @@
                     </ListView>
                 </Grid>
             </TabItem>
-            <TabItem Header="Produkty" HorizontalAlignment="Left" Width="64">
+
+
+
+            <TabItem Header="Produkty" Margin="-2,-2,2,0">
                 <Grid Background="Blue" Margin="5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="59*"/>
@@ -105,7 +108,7 @@
                 </Grid>
 
             </TabItem>
-            <TabItem Header="Historia zakupów">
+            <TabItem Header="Historia zakupów" HorizontalAlignment="Right" Width="107">
                 <Grid Background="Yellow" Margin="5">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3*"/>
