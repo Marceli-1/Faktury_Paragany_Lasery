@@ -12,10 +12,10 @@
       <Value Profile="(Default)">poig</Value>
     </Setting>
     <Setting Name="host" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">172.17.0.2</Value>
+      <Value Profile="(Default)">178.43.28.136</Value>
     </Setting>
     <Setting Name="port" Type="System.UInt32" Scope="Application">
-      <Value Profile="(Default)">3306</Value>
+      <Value Profile="(Default)">49154</Value>
     </Setting>
   </Settings>
 </SettingsFile>

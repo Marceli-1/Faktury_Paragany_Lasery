@@ -41,19 +41,18 @@ namespace Faktury_Paragany_Lasery.DAL.Repositories
                 connection.Open();
                 var id = command.ExecuteNonQuery();
                 state = true;
-                company.Id = (sbyte)command.LastInsertedId;
                 connection.Close();
             }
             return state;
         }
 
-        public static bool EditCompanyInDB(Company company, sbyte CompanyID)
+        public static bool EditCompanyInDB(Company company, string companyNip)
         {
             bool state = false;
             using (var connection = DBConnection.Instance.Connection)
             {
-                string EDIT_COMPANY = $"UPDATE companies SET name='{company.Name}', nip='{company.Nip}', address='{company.Address}' " +
-                    $"WHERE id={CompanyID}";
+                string EDIT_COMPANY = $"UPDATE companies SET name='{company.Name}', address='{company.Address}' " +
+                    $"WHERE id={companyNip}";
                 MySqlCommand command = new MySqlCommand(EDIT_COMPANY, connection);
                 connection.Open();
                 var returnedVal = command.ExecuteNonQuery();
@@ -63,7 +62,7 @@ namespace Faktury_Paragany_Lasery.DAL.Repositories
             return state;
         }
 
-        public static bool DeleteCompanyFromDB(Company company, sbyte CompanyID)
+        public static bool DeleteCompanyFromDB(Company company)
         {
             bool state = false;
             using (var connection = DBConnection.Instance.Connection)

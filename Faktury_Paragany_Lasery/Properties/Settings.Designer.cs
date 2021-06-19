@@ -52,7 +52,7 @@ namespace Faktury_Paragany_Lasery.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("172.17.0.2")]
+        [global::System.Configuration.DefaultSettingValueAttribute("178.43.28.136")]
         public string host {
             get {
                 return ((string)(this["host"]));
@@ -61,7 +61,7 @@ namespace Faktury_Paragany_Lasery.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("3306")]
+        [global::System.Configuration.DefaultSettingValueAttribute("49154")]
         public uint port {
             get {
                 return ((uint)(this["port"]));

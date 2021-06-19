@@ -22,10 +22,10 @@ namespace Faktury_Paragany_Lasery.Models
                 Companies.Add(c);
         }
 
-        private Company FindById(sbyte id)
+        private Company FindById(string nip)
         {
             foreach (var c in Companies)
-                if (c.Id == id) return c;
+                if (c.Nip == nip) return c;
             return null;
         }
     }

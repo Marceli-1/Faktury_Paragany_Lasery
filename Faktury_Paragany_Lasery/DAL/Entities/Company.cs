@@ -11,7 +11,6 @@ namespace Faktury_Paragany_Lasery.DAL.Entities
     class Company
     {
         #region Properties
-        public sbyte? Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
 
@@ -22,7 +21,6 @@ namespace Faktury_Paragany_Lasery.DAL.Entities
         #region Constructors
         public Company(string name, string nip, string address)
         {
-            Id = null;
             Name = name.Trim();
             Nip = nip.Trim();
             Address = address.Trim();
@@ -30,7 +28,6 @@ namespace Faktury_Paragany_Lasery.DAL.Entities
 
         public Company(Company company)
         {
-            Id = company.Id;
             Name = company.Name;
             Nip = company.Nip;
             Address = company.Address;
@@ -38,7 +35,6 @@ namespace Faktury_Paragany_Lasery.DAL.Entities
 
         public Company(MySqlDataReader reader)
         {
-            Id = sbyte.Parse(reader["id"].ToString());
             Name = reader["name"].ToString();
             Nip = reader["nip"].ToString();
             Address = reader["address"].ToString();
