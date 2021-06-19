@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Faktury_Paragany_Lasery"
         xmlns:vm="clr-namespace:Faktury_Paragany_Lasery.ViewModel"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
   <Window.DataContext>
@@ -20,8 +21,8 @@
                         <ColumnDefinition Width="302*" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.ColumnSpan="1">
-                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_2">Dodaj</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="Button_Click_3">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Click="Btn_click">Dodaj</Button>
+                        <Button Height="30" Width="100" Margin="10" Command="{Binding CompanyVM.DeleteCompany}" Content="Usuń"></Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_4">Wystaw Fakturę</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_6">Informacje</Button>
@@ -79,7 +80,13 @@
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.ColumnSpan="1">
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_7">Dodaj</Button>
-                        <Button Height="30" Width="100" Margin="10" Click="{Binding CompanyVM.DeleteCompany}">Usuń</Button>
+                        <Button Height="30" Width="100" Margin="10" Content="Usun">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <i:InvokeCommandAction Command="{Binding CompanyVM.DeleteCompany}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_9">Utwórz listę</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_10">Informacje</Button>
                     </StackPanel>

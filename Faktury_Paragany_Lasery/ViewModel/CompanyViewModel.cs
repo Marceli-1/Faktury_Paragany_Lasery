@@ -80,13 +80,17 @@ namespace Faktury_Paragany_Lasery.ViewModel
         { 
             get 
             {
+                Console.WriteLine(CurrentCompany);
                 if (deleteCompany == null)
                 {
                     deleteCompany = new RelayCommand(
                         arg =>
                         {
                             if (model.DeleteCompany(CurrentCompany))
+                            { 
                                 System.Windows.MessageBox.Show("Company deleted");
+                                Companies = model.Companies;
+                            }
                         },
                         arg => true
                         );
@@ -94,7 +98,12 @@ namespace Faktury_Paragany_Lasery.ViewModel
                 return deleteCompany;
             }
         }
-
+        /*
+        private ICommand addCompany = null;
+        public ICommand AddCompany
+        {
+            return true
+        }*/
         #endregion
     }
 }

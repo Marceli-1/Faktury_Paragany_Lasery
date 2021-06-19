@@ -17,7 +17,7 @@ namespace Faktury_Paragany_Lasery.DAL.Entities
 
         [StringLength(100)]
         public string Nip { get; set; }
-        public ObservableCollection<Company> Company { get; internal set; }
+        //public ObservableCollection<Company> Company { get; internal set; }
         #endregion
 
         #region Constructors

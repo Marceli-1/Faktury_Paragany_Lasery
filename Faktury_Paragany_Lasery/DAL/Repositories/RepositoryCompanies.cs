@@ -64,6 +64,7 @@ namespace Faktury_Paragany_Lasery.DAL.Repositories
 
         public static bool DeleteCompanyFromDB(Company company)
         {
+            Console.WriteLine("POTEZNY PRINT W DELETE");
             bool state = false;
             using (var connection = DBConnection.Instance.Connection)
             {

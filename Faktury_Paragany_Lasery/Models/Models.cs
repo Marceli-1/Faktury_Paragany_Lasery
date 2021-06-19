@@ -10,16 +10,21 @@ namespace Faktury_Paragany_Lasery.Models
     using DAL.Entities;
     using DAL.Repositories;
     using System.Collections.ObjectModel;
-    class CompanyModel
+    class Models
     {
 
         public ObservableCollection<Company> Companies { get; set; } = new ObservableCollection<Company>();
+        public ObservableCollection<Product> Products { get; set; } = new ObservableCollection<Product>();
 
-        public CompanyModel()
+        public Models()
         {
             var companies = RepositoryCompanies.GetAllCompanies();
             foreach (var c in companies)
                 Companies.Add(c);
+            /*
+            var products = RepositoryProducts.GetAll();
+            foreach (var p in products)
+                Products.Add(p);*/
         }
 
         public bool DeleteCompany(Company company)
