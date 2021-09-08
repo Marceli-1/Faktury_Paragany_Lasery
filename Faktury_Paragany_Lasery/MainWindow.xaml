@@ -21,7 +21,7 @@
                         <ColumnDefinition Width="302*" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.ColumnSpan="1">
-                        <Button Height="30" Width="100" Margin="10" Click="Btn_click">Dodaj</Button>
+                        <!-- "<Button Height="30" Width="100" Margin="10" Click="Btn_click">Dodaj</Button> -->
                         <Button Height="30" Width="100" Margin="10" Command="{Binding CompanyVM.DeleteCompany}" Content="Usuń"></Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_4">Wystaw Fakturę</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_5">Historia</Button>
@@ -81,11 +81,11 @@
                     <StackPanel Grid.ColumnSpan="1">
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_7">Dodaj</Button>
                         <Button Height="30" Width="100" Margin="10" Content="Usun">
-                            <i:Interaction.Triggers>
+                            <!-- <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
                                     <i:InvokeCommandAction Command="{Binding CompanyVM.DeleteCompany}"/>
                                 </i:EventTrigger>
-                            </i:Interaction.Triggers>
+                            </i:Interaction.Triggers> -->
                         </Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_9">Utwórz listę</Button>
                         <Button Height="30" Width="100" Margin="10" Click="Button_Click_10">Informacje</Button>

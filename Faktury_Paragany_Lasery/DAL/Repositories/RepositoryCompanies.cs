@@ -19,15 +19,15 @@ namespace Faktury_Paragany_Lasery.DAL.Repositories
         public static List<Company> GetAllCompanies()
         {
             List<Company> companies = new List<Company>();
-            using (var connection = DBConnection.Instance.Connection)
-            {
-                MySqlCommand command = new MySqlCommand(ALL_COMPANIES, connection);
-                connection.Open();
-                var reader = command.ExecuteReader();
-                while (reader.Read())
-                    companies.Add(new Company(reader));
-                connection.Close();
-            }
+         //   using (var connection = DBConnection.Instance.Connection)
+         //   {
+         //       MySqlCommand command = new MySqlCommand(ALL_COMPANIES, connection);
+         //       connection.Open();
+           //     var reader = command.ExecuteReader();
+             //   while (reader.Read())
+              //      companies.Add(new Company(reader));
+              //  connection.Close();
+           // }
             Console.WriteLine("LUL TO DZIALA");
             return companies;
         }
