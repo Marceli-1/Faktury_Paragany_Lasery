@@ -27,7 +27,7 @@ namespace Faktury_Paragany_Lasery
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Btn_click(object sender, RoutedEventArgs e)
         {
 
         }
