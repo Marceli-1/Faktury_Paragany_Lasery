@@ -1,2 +1,2 @@
 # Faktury_Paragany_Lasery
-POTEZNE README 
+Projekt na przedmiot: Programowanie Obiektowe i Graficzne
